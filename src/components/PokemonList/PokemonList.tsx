@@ -39,11 +39,14 @@ export const PokemonList: React.FC = () => {
 
   return (
     <>
-      {totalCount && pokemons && (
-        <p>
-          showing {pokemons.length} / {totalCount} Pokémons
-        </p>
-      )}
+      <h1 style={{ textAlign: "center" }}>
+        Pokédex&nbsp;
+        {totalCount && pokemons && (
+          <span>
+            ({pokemons.length} / {totalCount})
+          </span>
+        )}
+      </h1>
       {pokemons && (
         <Grid>
           {pokemons.map(({ name, url }, idx) => (
