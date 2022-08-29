@@ -1,9 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  html, body {
+  html, body, #root {
     margin: 0;
-    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  body {
+    background-color: #bc2322;
+    //background-color: #dd2120;
   }
 
   * {

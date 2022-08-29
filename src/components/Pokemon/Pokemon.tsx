@@ -14,7 +14,7 @@ import {
   StyledPokemon,
 } from "./Pokemon.styled";
 
-export const Pokemon: React.FC<IPokemonBasic> = ({ name, url }) => {
+export const Pokemon: React.FC<IPokemonBasic> = ({ name }) => {
   const [data, setData] = useState<IPokemonInfo | null>(null);
   const api = new Api();
 

@@ -24,10 +24,10 @@ export class Api extends TransportLayer {
    * Fetches a list of pokemons.
    * @returns list of pokemons
    */
-  public async getAll(): Promise<IFetchPokemonResponse> {
+  public async getAll(offset: number = 0, limit: number = 20): Promise<IFetchPokemonResponse> {
     // return this.api.get(ApiConfig.POKEMON.GET_ALL());
     try {
-      const response = await this.api.get(ApiConfig.POKEMON.GET_ALL());
+      const response = await this.api.get(ApiConfig.POKEMON.GET_ALL(offset, limit));
       return response.data;
     } catch (error) {
       return Promise.reject(error);

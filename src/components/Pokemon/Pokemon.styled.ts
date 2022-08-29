@@ -10,12 +10,12 @@ const loadingAnimation = keyframes`
 
 export const StyledPokemon = styled.div<IsLoadable>`
   align-items: center;
-  background-color: orange;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 250px;
   padding: 15px;
   position: relative;
 
@@ -52,7 +52,7 @@ export const PokemonImgWrapper = styled.div`
   flex: auto;
   justify-content: center;
   margin: 10px 0;
-  height: 150px;
+  height: 100px;
   max-width: 80%;
   position: relative;
 
