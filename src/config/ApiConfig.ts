@@ -12,5 +12,3 @@ export const ApiConfig = {
     GET_ONE: (pokemon: string) => `${ApiConfig.POKEMON.BASE}/${pokemon}`,
   }
 };
-
-

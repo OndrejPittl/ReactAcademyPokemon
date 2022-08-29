@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyles } from "./components/GlobalStyles/GlobalStyles";
+import { GlobalStyles } from "./components/GlobalStyles";
 import { Pokedex } from "./components/Pokedex";
 
 function App() {

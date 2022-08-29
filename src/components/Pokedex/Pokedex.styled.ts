@@ -13,6 +13,8 @@ export const StyledPokedex = styled.div`
 `;
 
 export const StyledPokedexHeading = styled.h1`
+  color: #fff;
+  text-shadow: 1px 2px 0 #000;
   font-size: 2rem;
   margin: 0;
   text-align: center;
@@ -25,6 +27,7 @@ export const StyledPokedexHeader = styled.header`
 
 export const StyledPokedexContent = styled.div`
   background-color: #9e1b1a;
+  box-shadow: inset 0 0 15px rgb(0, 0, 0, .3);
   flex: auto;
   overflow-y: scroll;
   padding: 2rem;
